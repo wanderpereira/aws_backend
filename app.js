@@ -1,14 +1,9 @@
 import express from "express";
-import cors from "cors"
 import bodyParser from "body-parser"
 import {estados, ranking} from "./database/Model.js";
 
 const app = express();
 const port = process.env.port;
-
-app.use(cors({
-    origin: '*'
-}));
 
 app.use(bodyParser.json())
 
